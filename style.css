@@ -1,0 +1,214 @@
+:root {
+    --primary: black;
+    --secondary: saddlebrown;
+    --text: white;
+    --third-color: sandybrown;
+}
+::placeholder {
+    text-transform: capitalize;
+    color: var(--third-color);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p {
+    font-size: 12px;
+    color: var(--text);
+    text-transform: capitalize;
+    padding: 10px;
+}
+.container {
+    background-color: black;
+    display: grid;
+    grid-template-areas: 
+        'nav header header header'
+        'nav item1 item2 sidebar1'
+        'nav item3 item4 sidebar2'
+        'nav item5 item6 sidebar3'
+    ;
+    gap: 1rem;
+    /* width: 100%; */
+    /* padding: 10px; */
+}
+.container > div {
+    background-color: rgb(79, 81, 82);
+    color: var(--text);
+    /* padding: .5rem; */
+}
+.nav {
+    grid-area: nav;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.nav-name {
+    color: var(--text);
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px;
+}
+.nav-btn {
+    width: 80%;
+    background-color: rgb(79, 81, 82);
+    color: var(--text);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    text-align: left;
+    border: none;
+    margin: 10px;
+    transition: .5s ease-in-out;
+}
+.nav-btn:hover {
+    background-color: var(--third-color);
+    color: var(--primary);
+}
+.switch {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: end;
+    padding-top: 300px;
+}
+.btn {
+    width: 20%;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(79, 81, 82);
+    color: var(--third-color);
+    padding: 10px 20px;
+}
+.header {
+    grid-area: header;
+    height: 5rem;
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: saddlebrown;
+}
+.logo {
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+}
+.info > input {
+    border: none;
+    background-color: rgb(48, 46, 46);
+    outline: none;
+    color: var(--text);
+    height: 30px;
+    /* width: 100px; */
+    padding: 10px;
+}
+.info {
+    display: flex;
+    gap: 1rem;
+}
+.abb {
+    background-color: var(--third-color);
+    color: var(--primary);
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+.name {
+    text-transform: capitalize;
+    color: var(--third-color);
+    font-weight: bold;
+    padding: 5px;
+}
+.context-1 {
+    grid-area: item1;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.context-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.context-container  p:nth-child(2) {
+    background-color: var(--third-color);
+    color: var(--primary);
+    text-transform: uppercase;
+    padding: 10px;
+}
+.item-header {
+    color: var(--text);
+    font-size: 24px;
+    text-transform: capitalize;
+    padding: 10px;
+}
+.item-footer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 180px;
+}
+.item-footer div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* item 2 */
+.context-2 {
+    grid-area: item2;
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+.bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* item 3 */
+.context-3 {
+    grid-area: item3;
+    height: 250px;
+    width: 300px;
+    border-radius: 10px; 
+}
+/* item 4 */
+
+.context-4 {
+    grid-area: item4;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px; 
+}
+/* item 5 */
+.context-5 {
+    grid-area: item5;
+    width: 300px;
+    height: 100px;
+}
+.context-6 {
+    grid-area: item6;
+    height: 100px;
+}
+.sidebar-1 {
+    grid-area: sidebar1;
+    border-radius: 10px;
+    height: 100px;
+}
+.sidebar-2 {
+    grid-area: sidebar2;
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+
+
